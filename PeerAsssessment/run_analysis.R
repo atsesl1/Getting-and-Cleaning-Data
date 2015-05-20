@@ -1,5 +1,6 @@
 # 1) You should create one R script called run_analysis.
 library(dplyr)    
+library(plyr)    
 # Download the data
 url <- "https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip"
 download.file(url,method="curl",destfile="/Users/alex/Documents/R directory/Getting-and-Cleaning-Data/PeerAsssessment/test.zip")
@@ -44,4 +45,4 @@ write.table(finalDat,"/Users/alex/Documents/R directory/Getting-and-Cleaning-Dat
 # 6) From the data set in step 4, create a second, independent tidy data set
 # with the average of each variable for each activity and each subject.
 theFinal <- ddply(finalDat, .(Subject,Activity), colwise(mean))
-write.table(theFinal,"/Users/alex/Documents/R directory/Getting-and-Cleaning-Data/PeerAsssessment/table_means.txt")
+write.table(theFinal,"/Users/alex/Documents/R directory/Getting-and-Cleaning-Data/PeerAsssessment/table_means.txt", row.name=FALSE)
