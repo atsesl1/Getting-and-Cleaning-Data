@@ -9,3 +9,7 @@
 
 **complete_data.txt** contains **10299** observations of **68** variables.
 **table_means.txt** contains **180** observations of **68** variables.
+
+For detailed information on the general process flow as well as methods used in the project, please refer to **CodeBook.md** file in this repository.
+
+Here is the link to the file: https://github.com/atsesl1/Getting-and-Cleaning-Data/blob/master/PeerAsssessment/CodeBook.md
