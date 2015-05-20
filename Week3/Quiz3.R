@@ -1,5 +1,5 @@
 # Weeek 3 - Quiz
-#Question 1
+# Question 1
 url <- "https://d396qusza40orc.cloudfront.net/getdata%2Fdata%2Fss06hid.csv"
 #dir.create("/Users/alex/Documents/R directory/Getting-and-Cleaning-Data/Week3")
 download.file(url,destfile="/Users/alex/Documents/R directory/Getting-and-Cleaning-Data/Week3/test.csv",method="curl")
