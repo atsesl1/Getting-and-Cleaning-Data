@@ -37,7 +37,7 @@ names(data3)
 data2[,1] <- as.character(data2[,1])
 data3[,1] <- as.character(data3[,1])
 dataMer <- merge(data2,data3, by.x="X",by.y="CountryCode")
-res4 <-grep("[Ff]iscal+.+[Ee]nd+.+[Jj]une",dataMer$Special.Notes)
+res4 <-grep("[Ff]iscal+.+[Ee]nd+.+[Jj]une",dataMer$Special.Notes) # EZ
 length(res4)
 
 #Question 5
